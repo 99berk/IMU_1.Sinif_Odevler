@@ -1,0 +1,85 @@
+class Yiyecek{
+    private String isim;
+    private String renk;
+    private String yetistigiYer;
+
+    public Yiyecek(String isim, String renk, String yetistigiYer){
+        this.isim = isim;
+        this.renk = renk;
+        this.yetistigiYer = yetistigiYer;
+    }
+
+    public String getIsim(){
+        return isim;
+    }
+
+    public void setIsim(String isim){
+        this.isim = isim;
+    }
+
+    public String getRenk(){
+        return renk;
+    }
+
+    public void setRenk(String renk){
+        this.renk = renk;
+    }
+
+    public String getYetistigiYer(){
+        return yetistigiYer;
+    }
+
+    public void setYetistigiYer(String yetistigiYer){
+        this.yetistigiYer = yetistigiYer;
+    }
+
+    public String YiyecekTuru(){
+        return "belirsiz";
+    }
+}
+
+class Sebze extends Yiyecek{
+    public Sebze(String isim, String renk){
+        super(isim,renk,"Toprak");
+    }
+
+    public String YiyecekTuru(){
+        return "Sebze";
+    }
+
+    static String yazdir(Sebze nesneYiyecek){
+        return "Lahana bir sebzedir.";
+    }
+}
+
+class Meyve extends  Yiyecek{
+    public Meyve(String isim, String renk){
+        super(isim,renk,"Agac");
+    }
+
+    public String YiyecekTuru(){
+        return "Meyve";
+    }
+
+    static String yazdir(Meyve nesneYiyecek){
+        return "Elma bir meyvedir.";
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+	    Yiyecek kl = new Sebze("Lahana","Kirmizi");
+        Yiyecek ye = new Meyve("Elma", "Yesil");
+
+        System.out.println("\n");
+        System.out.println(kl.getRenk()+" "+kl.getIsim()+", yetiştiği yer: "+kl.getYetistigiYer());
+        System.out.println(ye.getRenk()+" "+ye.getIsim()+", yetiştiği yer: "+ye.getYetistigiYer());
+
+        Sebze s1 = (Sebze) kl;
+        System.out.println("\n"+s1.yazdir(s1));
+
+        Meyve m1 = (Meyve) ye;
+        System.out.println("\n"+m1.yazdir(m1));
+    }
+}

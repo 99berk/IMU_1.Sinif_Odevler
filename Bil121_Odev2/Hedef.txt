@@ -1,0 +1,12 @@
+13.0 Antalya 
+12.0 Adana 
+10.0 Izmir 
+8.0 Canakkale 
+6.0 Istanbul 
+6.0 Samsun 
+6.0 Trabzon 
+5.0 Bursa 
+5.0 Sakarya 
+4.0 Zonguldak 
+4.0 Diyerbakir 
+3.0 Ankara 

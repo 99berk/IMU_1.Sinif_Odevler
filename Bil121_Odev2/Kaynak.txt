@@ -1,0 +1,13 @@
+Ankara 3 3 5 5 2             
+Istanbul 8 7 9 6 4            
+Sakarya 6 5 8 5 3       
+Zonguldak 7 3 6 4 3           
+Trabzon 8 5 5 10 5           
+Izmir 12 9 12 13 7            
+Antalya 17 13 13 13 11        
+Bursa 6 5 10 5 2              
+Adana 16 12 12 13 11         
+Diyerbakir 9 6 5 2 0          
+Canakkale 9 8 11 10 5         
+Samsun 7 5 8 9 5             
+
